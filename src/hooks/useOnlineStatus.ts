@@ -4,7 +4,7 @@ import { Err, Ok, ErrUnknown } from "utils/results";
 /**
  * Time, in milliseconds, between online status checks.
  */
-const checkStatusTime = 45 * 1000;
+const checkStatusTime = 60 * 1000;
 
 /**
  * React hook that periodically pings Lantern's `/api/ping` endpoint to check if we are online,

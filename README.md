@@ -14,7 +14,7 @@ PNPM will automatically be installed on most machines on first use via Node's co
 
 Clone the project from the remote. Next, from the root of the project, run `pnpm install` to install all dependencies.
 
-Start your database either with a standalone [PostgreSQL](https://www.postgresql.org/download) server or using [Docker](https://docs.docker.com/get-docker) with the command `docker compose up -d`.
+Start your database either with a standalone [PostgreSQL](https://www.postgresql.org/download) server or using [Docker](https://docs.docker.com/get-docker) with the commands `cd deploy/local` and `docker compose up -d`.
 
 If you are using a standalone Postgres server, you will need make sure your Host, DB Name, DB User, and Password all match between your server and the environment variables defined in `env.development`.
 
