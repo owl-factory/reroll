@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["dom", "dom.iterable", "esnext", "WebWorker"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -47,5 +47,6 @@
     "**/*.js",
     "**/*.mjs"
   ],
-  "exclude": ["node_modules", "archive", ".next", "public"]
+  "exclude": ["node_modules", "archive", ".next", "public"],
+  "types": ["@serwist/next/typings"]
 }
