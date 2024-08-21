@@ -6,7 +6,9 @@ import nextJest from "next/jest.js";
  * https://github.com/motdotla/dotenv
  */
 import { config as env } from "dotenv";
+import { getBaseUrl } from "./src/utils/config.mjs";
 env({ path: "./.env.development" });
+process.env.NEXT_PUBLIC_BASE_URL = getBaseUrl();
 
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
